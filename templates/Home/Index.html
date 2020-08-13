@@ -1,1 +1,368 @@
-<h1>Hello World...</h1>
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="custom-banner">
+    <header class="main-header">
+        <!-- Carousel -->
+        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- Static Header -->
+                    <div class="header-text ">
+                        <div class="col-md-12">
+                            <h1>
+                                <span>The Most Epic</span><br>
+                                Mountains <i>in the</i> World
+                            </h1>
+                            <hr class="line">
+                            <p>Zerotheme can help you build better websites using the Bootstrap CSS framework! <br/>Just download your template and start going, no strings attached!</p>
+                            <a href="single.html" class="btn btn-primary btn-header">Find Out More</a>
+                        </div>
+                    </div><!-- /header-text -->
+                </div>
+                <div class="item">
+                    <!-- Static Header -->
+                    <div class="header-text">
+                        <div class="col-md-12">
+                            <h1>
+                                <span>The Most Epic</span><br>
+                                Mountains <i>in the</i> World
+                            </h1>
+                            <hr class="line">
+                            <p>Zerotheme can help you build better websites using the Bootstrap CSS framework! <br/>Just download your template and start going, no strings attached!</p>
+                            <a href="single.html" class="btn btn-primary btn-header">Find Out More</a>
+                        </div>
+                    </div><!-- /header-text -->
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div><!-- /carousel -->
+        
+    </header>
+</div>
+<!-- /Section: intro -->
+
+<!-- /////////////////////////////////////////Content -->
+<div id="page-content">
+
+    <!-- ////////////Content Box 01 -->
+    <section class="box-content box-1" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-item">
+                        <img src="{% static 'images/image5.jpg' %}" />
+                        <div class="item-caption">
+                            <div class="item-caption-inner">
+                                <p class="item-caption-title"><a href="#">Why It’s Important To Struggle</a></p>
+                                <p class="item-caption-category">
+                                    <a href="#" rel="category tag">Business</a>, 
+                                    <a href="#" rel="category tag">Lifestyle</a>, <a href="#" rel="category tag">Pursuits</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-item">
+                        <img src="{% static 'images/image6.jpg' %}" />
+                        <div class="item-caption">
+                            <div class="item-caption-inner">
+                                <p class="item-caption-title"><a href="#">Why It’s Important To Struggle</a></p>
+                                <p class="item-caption-category">
+                                    <a href="#" rel="category tag">Business</a>, 
+                                    <a href="#" rel="category tag">Lifestyle</a>, <a href="#" rel="category tag">Pursuits</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ////////////Content Box 06 -->
+    <section class="box-content box-6">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <hr class="line">
+                    <h3 class="sub">The Selected Of</h3>
+                    <h1 class="title">Portfolio</h1>
+                </div>
+            </div>
+            <div class="filter-container isotopeFilters">
+                <ul class="list-inline filter">
+                    <li class="active"><a href="#" data-filter="*">All </a></li>
+                    <li><a href="#" data-filter=".illustrations">Illustrations</a></li>
+                    <li><a href="#" data-filter=".photography">Photography</a></li>
+                    <li><a href="#" data-filter=".websites">Websites</a></li>
+                    <li><a href="#" data-filter=".art">Art</a></li>
+                </ul>
+            </div>
+            <div class="isotopeContainer">
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector art">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image21.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image21.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector art">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image22.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image22.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector illustrations">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image23.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image23.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector photography">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image24.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image24.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector websites">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image19.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image19.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector websites">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image20.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image20.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector illustrations">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image25.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image25.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-md-6 isotopeSelector photography">
+                    <div class="portfolio-box zoom-effect">
+                        <img src="{% static 'images/image26.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                                <div class="project-category">
+                                    Category
+                                </div>
+                                <div class="project-social">
+                                    <ul class="list-inline">
+                                        <li><a href="single.html"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="{% static 'images/image26.jpg' %}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><i class="fa fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ////////////Content Box 03 -->
+    <section class="box-content box-2 box-style-1">
+        <div class="container">
+            <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+                <h2>Our Story</h2>
+                <hr class="line">
+                
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis at diam.</p>
+                        <p>Lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ////////////Content Box 04 -->
+    <section class="box-content box-4 box-style-2">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h3 class="sub">Form</h3>
+                    <h1 class="title">Reservation</h1>
+                </div>
+            </div>
+            <div class="row">
+                <p><i>Please book in advance to get the best service from us. We wishing you a great day.<br>Thanks!</i></p>
+                <form class="reservation" name="form-reservation" method="post" action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select class="selectpicker show-tick">
+                                    <option>Morning</option>
+                                    <option>Afternoon</option>
+                                    <option>Evening</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="date" class="form-control input-lg" name="date" id="date" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control input-lg" name="email" id="email" placeholder="Enter email" required="required" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select class="selectpicker">
+                                    <option>Event</option>
+                                    <option>Portraiture</option>
+                                    <option>Landscape</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-skin btn-block" name="submit" id="submit">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p>Opentime:    8:00am -11:30am  /  2:00pm-5:30pm  /  7:00pm-10:00pm</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
